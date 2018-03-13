@@ -1,3 +1,12 @@
 * {
     box-sizing: border-box;
+    padding:0;
+    margin:0;
+}
+
+body {
+    font-family:  'Lato', Arial, Helvetica, sans-serif;
+    font-size : 14px;
+    color : #a1b1bc;
+    background-color: #fff;
 }
