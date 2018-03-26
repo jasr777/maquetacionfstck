@@ -10,3 +10,49 @@ body {
     color : #a1b1bc;
     background-color: #fff;
 }
+
+a {
+    text-decoration : none;
+}
+a :hover {
+    text-decoration : none;
+}
+
+
+.wrapper {
+    width :1170px;
+    margin : 0 auto;
+}
+
+
+/*-----------------------------------------------*/
+/* Menu -----------------------------------------*/
+
+nav {
+    padding:20px;
+    color:#2c3e50;
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items:center;
+    
+}
+nav ul li {
+    flex-grow : 1;
+}
+
+
+.logo {
+    font-size : 35.69px;
+    display:flex;
+    
+}
+.logo img {
+    padding:5px;
+}
+.logo span {
+    font-weight:900;  
+
+}
