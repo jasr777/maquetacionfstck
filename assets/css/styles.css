@@ -17,6 +17,15 @@ a {
 a :hover {
     text-decoration : none;
 }
+h1 {
+    font-size: 26px;
+    font-weight: 400;
+    color:#222533;
+}
+h1 span {
+    font-size: 50px;
+    font-weight: 900;
+}
 
 h2 {
     font-size : 36px;
@@ -34,7 +43,15 @@ h4 {
     color:#34495e;
     font-weight: 400;
 }
+.grid-wrapper {
+    display : grid;
+    grid-template-columns: 1fr 1170px 1fr;
 
+}
+.wrapped-content {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
 .wrapper {
     width :1170px;
     margin : 0 auto;
@@ -52,10 +69,24 @@ h4 {
 .content--space-around {
     justify-content: space-around;
 }
+.content--space-between {
+    justify-content: space-between;
+}
+.content--centered {
+    justify-content: center;
+    align-items: center;
+}
 .content--column{
     display:flex;
     flex-direction: column;
     justify-content: space-evenly;
+    width:100%;
+}
+.content--column__padding {
+    padding:0px 30px;
+}
+.content--column__space-between {
+    justify-content: space-between;
 }
 
 .content--column__padding-right {
@@ -68,7 +99,47 @@ h4 {
     flex-direction: column;
     align-items: center;
 }
+.title-content--center__padding-bot{
+    padding-bottom:100px;
+}
 /***/
+/* Buttons ---------------------------------------*/
+
+.btn {
+    font-size: 16px;
+    font-weight: 900;
+    color : #fff;
+    padding:5px 0px;
+    border : none;
+    border-radius :2px;
+    background-color: #a1b1bc;
+    box-shadow: 1px 3px 0px 0px #81919b;
+    text-align : center;
+    height:50px;
+}
+
+.btn--primary {
+    width: 150px;
+    padding:20px 0px;
+}
+
+.btn--primary__transparent {
+    background-color: transparent;
+    border-radius: 5px;
+    border : 2px solid #fff;
+    box-shadow: none;
+    padding: 15px 0px;
+    width: 170px;
+}
+.btn--secondary {
+    background-color: #1a1c27;
+    width:200px;
+    height : 60px;
+    box-shadow: none;
+}
+
+
+
 
 /*-----------------------------------------------*/
 /* Menu -----------------------------------------*/
@@ -107,12 +178,102 @@ ul{
 .hero {
     background-image: url(../img/hero.jpg);    
     background-size: cover;
-    min-height:897px; /* TODO : Quitar cuando maquete lo de dentro*/
+    min-height:900px; /* TODO : Quitar cuando maquete lo de dentro*/
+    line-height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+ol li {
+    font-size: 24px;
+    font-weight: 700;
+    color : #1a1c27;
+    list-style-type: none;
+    list-style-position: inside;
+    padding-bottom:20px;
+}
+ol li i {
+    font-size : 12px;
+    text-align : center; 
+    padding:15px;
+
+    
 }
 
 
-/*-----------------------------------------*/
+.line {
+    width: 270px;
+    height: 4px;
+    background-color: #1a1c27;
+    z-index:1;
+    position : relative;
+}
+.line--blue {
+    width:100px;
+    height:4px;
+    background-color: #21c2f8;
+    position:absolute;
+}
 
+/*-----------------------------------------*/
+/*- Grid Amazing Works -*/ 
+.bg {
+    background-color: rgba(236, 240, 241, 0.3);;
+}
+.grid {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.grid--item {
+    width:390px;
+    height:50px;
+    background-color: #fff;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.grid--item i {
+    padding-right:10px;
+}
+.grid--item h3 {
+    padding:15px;
+}
+.likes p{
+    display:inline;
+    padding:10px;
+}
+.item1 {
+    grid-column: 1/2;
+    grid-row:1/2;
+}
+
+.item2 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.item3 {
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+
+.item4 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+.item5 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+.item6 {
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
 
 
 /*-- Seccion Hello ! ---------------------------*/
@@ -317,6 +478,44 @@ ul{
 
 
 /**-*/
+/*--- Maps -----------------------------*/
+
+#map {
+    height : 500px;
+
+}
+.controls {
+    margin-top: 10px;
+    border: 1px solid transparent;
+    border-radius: 2px 0 0 2px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    height: 32px;
+    outline: none;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+#pac-input {
+    background-color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    margin-left: 12px;
+    padding: 0 11px 0 13px;
+    text-overflow: ellipsis;
+    width: 400px;
+    height:32px;
+}
+
+#pac-input:focus {
+    border-color: #4d90fe;
+}
+
+.pac-container {
+    font-family: 'Lato', sans-serif;
+}
+
+/*--------------------------------------*/
 /* - Seccion TheFox Design ------------**/
 
 
@@ -356,6 +555,50 @@ textarea {
     border-radius: 3px;
     resize:none;
 }
+
+/*----- Blogs -------------------*/
+.blog {
+    position:relative;    
+}
+.blog img {
+    filter:contrast(50%);
+}
+.blog:hover img{
+    filter : none;
+}
+.blog:hover .blog--info {
+    background-color: #252937;
+    cursor:pointer;
+
+}
+
+.blog:hover h3 {
+    color:#17e2ba;
+}
+.blog--info {
+    position:absolute;
+    top: 180px;
+    z-index: 1;
+    text-align:center;
+    
+    min-width : 384px;
+    min-height:100px;
+
+}
+.blog--info h3{
+    color:#fff;
+    padding:30px 0px 10px 0px;
+    font-weight: 700;;
+}
+
+.blog--info  h4 {
+    color:#fff;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+
+/*------------------------------*/
 /* Call to Action ------------- */
 .cta {
     display:flex;
@@ -373,12 +616,104 @@ textarea {
     
 }
 .cta p {
-    padding:10px;
+    padding:10px 0px 30px 0px;
 }
+
 button {
     padding :25px 20px;
 }
 /*******************************/
+/* Footer */
+
+footer {
+    background-color:    #1a1c27;
+}
+footer h2 {
+    font-size :18px;
+    font-weight: 900;
+    color:#fff;
+    border-left: 5px solid #1abc9c;
+    padding-left :20px;
+    margin-bottom:50px;
+}
+
+footer .logo--footer {
+    font-size :47.59px;
+    font-weight: 400;    
+    border:none;
+    margin-bottom:30px;
+
+}
+
+.info p {
+    padding:20px;
+}
+footer .logo--footer span {
+    font-weight: 900;
+    color:#1abc9c;
+}
+
+.post {
+    border-bottom:1px solid #262837;
+    padding:18px 0px;
+}
+.tweet i {
+    padding:20px 20px 20px 0px;
+}
+.tweet {
+    display:flex;
+    flex-direction: row;
+}
+.tweet--body {
+    border-bottom:1px solid #262837;
+}
+.tweet--body a {
+    color:#1abc9c;
+}
+.tweet--body p {
+    padding:10px;
+    line-height:1.5;
+}
+.time {
+    font-size: 12px;
+}
+
+.featured-works h2 {
+    margin-bottom:50px;
+}
+.featured-gallery--row{
+    display:flex;
+    flex-direction: row;
+}
+.featured-gallery--row img {
+    margin:8px;
+}
+
+.copyright {
+    background-color: #222533;
+}
+
+.copyright--content {
+    display:flex;
+    flex-direction: row;
+    padding:20px;
+    justify-content: space-between;
+}
+
+.copyright--content p span {
+    color:#1abc9c;
+}
+
+.copyright--social i {
+    padding:5px;
+}
+
+.copyright--social i:hover {
+    color:#fff;
+}
+
+
+
 /*---------AUXILIARES ---------------------*/ 
 /*TODO : BORRAR**/
 
