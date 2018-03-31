@@ -14,9 +14,6 @@ body {
 a {
     text-decoration : none;
 }
-a :hover {
-    text-decoration : none;
-}
 h1 {
     font-size: 26px;
     font-weight: 400;
@@ -26,7 +23,6 @@ h1 span {
     font-size: 50px;
     font-weight: 900;
 }
-
 h2 {
     font-size : 36px;
     font-weight: 300;
@@ -46,15 +42,10 @@ h4 {
 .grid-wrapper {
     display : grid;
     grid-template-columns: 1fr 1170px 1fr;
+}
 
-}
 .wrapped-content {
-    grid-column-start: 2;
-    grid-column-end: 3;
-}
-.wrapper {
-    width :1170px;
-    margin : 0 auto;
+    grid-column: 2/3
 }
 /* Content layout */
 .content {
@@ -64,43 +55,38 @@ h4 {
     justify-content:space-between;   
 }
 .content--no-padding {
-    padding:0px 0px;
+    padding:0px;
 }
-.content--space-around {
-    justify-content: space-around;
-}
-.content--space-between {
-    justify-content: space-between;
-}
-.content--centered {
-    justify-content: center;
-    align-items: center;
-}
+
 .content--column{
     display:flex;
     flex-direction: column;
     justify-content: space-evenly;
     width:100%;
 }
-.content--column__padding {
-    padding:0px 30px;
-}
-.content--column__space-between {
-    justify-content: space-between;
-}
-
 .content--column__padding-right {
     padding-right : 20px;
 }
+.content--column__justified {
+    justify-content: space-around;
+}
+
 
 .title-content--center {
-    padding-top :100px;
+    padding :100px 0px;
     display:flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center;    
 }
-.title-content--center__padding-bot{
-    padding-bottom:100px;
+
+.text--centered {
+    align-items: center;
+    justify-content: center;
+}
+
+.flex--row {
+    display:flex;
+    flex-direction: row;
 }
 /***/
 /* Buttons ---------------------------------------*/
@@ -113,7 +99,6 @@ h4 {
     border : none;
     border-radius :2px;
     background-color: #a1b1bc;
-    box-shadow: 1px 3px 0px 0px #81919b;
     text-align : center;
     height:50px;
 }
@@ -121,13 +106,13 @@ h4 {
 .btn--primary {
     width: 150px;
     padding:20px 0px;
+    box-shadow: 1px 3px 0px 0px #81919b;
 }
 
 .btn--primary__transparent {
     background-color: transparent;
     border-radius: 5px;
     border : 2px solid #fff;
-    box-shadow: none;
     padding: 15px 0px;
     width: 170px;
 }
@@ -135,11 +120,7 @@ h4 {
     background-color: #1a1c27;
     width:200px;
     height : 60px;
-    box-shadow: none;
 }
-
-
-
 
 /*-----------------------------------------------*/
 /* Menu -----------------------------------------*/
@@ -161,15 +142,13 @@ ul{
 
 .logo {
     font-size : 35.69px;
-    display:flex;
-    
+    display:flex;    
 }
 .logo img {
     padding:5px;
 }
 .logo span {
-    font-weight:900;  
-
+    font-weight:900; 
 }
 
 /*----------------------------------------*/
@@ -178,11 +157,8 @@ ul{
 .hero {
     background-image: url(../img/hero.jpg);    
     background-size: cover;
-    min-height:900px; /* TODO : Quitar cuando maquete lo de dentro*/
+    height:899px; /* TODO : Quitar cuando maquete lo de dentro*/
     line-height: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
 
 }
 
@@ -197,11 +173,13 @@ ol li {
 ol li i {
     font-size : 12px;
     text-align : center; 
-    padding:15px;
-
-    
+    padding:15px;    
 }
 
+ol li a:active {
+    background-color: #000;
+
+}
 
 .line {
     width: 270px;
@@ -219,6 +197,7 @@ ol li i {
 
 /*-----------------------------------------*/
 /*- Grid Amazing Works -*/ 
+
 .bg {
     background-color: rgba(236, 240, 241, 0.3);;
 }
@@ -226,6 +205,7 @@ ol li i {
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    padding-bottom:100px;
 }
 
 .grid--item {
@@ -352,14 +332,10 @@ ol li i {
     color:#fff;
 }
 /*-- Seccion Hello ! ---------------------------*/
-.content--column__justified-top {
-    justify-content: space-around;
-}
 .accordion {
     padding-bottom:5px;
 }
 
-/*[TODO] : Esta no es la manera correcta de hacer el dropdown*/
 .accordion--header__left {
     display:inline-block;
     border-top : 1px solid #eceef0;
@@ -368,7 +344,6 @@ ol li i {
     border-radius: 3px;
     padding : 18px;
     width :533px;
-
 }
 
 .accordion--header__right {
@@ -387,7 +362,6 @@ ol li i {
     border : 1px solid #eceef0;
     border-radius:0px 0px 3px 3px;
     padding :20px;
-
 }
 .accordion--body p {
     padding :20px;
@@ -407,10 +381,6 @@ ol li i {
 .block { 
     width:384px;
     height:200px;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 .block:hover {
     background-color: #2c3e50;
@@ -424,28 +394,31 @@ ol li i {
     font-size:14px;
     font-weight: 900;
     padding-top:14px;
-        color:#fff;
-
-    
+    color:#fff;    
 }
 .block--bgcolour__green {
     background-color: #20caa8;;
-    
 }
 .block--bgcolour__lightergreen {
     background-color: #1ad5b0;
 }
+
 /***/
-
-
-
-
 /*- Seccion : What Other Say About TheFox ----**/
-.title-content--center  .btngroup{
-    padding:40px 0px;
+.grid-2 {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+}
+.column1 {
+    grid-column: 1 / 2;
+}
+.column2  {
+    grid-column: 2/3;
 }
 .btngroup {
-    margin-right:52px;
+    margin-top:70px;
+    margin-right:13px;
     color:#2c3e50;
     font-weight: 700;
 }
@@ -456,7 +429,6 @@ ol li i {
     border-bottom-left-radius: 5px;
     border-right: none;
     background-color: #fbfafa;
-
 }
 
 .btngroup .btngroup--next {
@@ -465,14 +437,11 @@ ol li i {
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
     background-color: #fbfafa;
-
 }
 
 .btngroup a:hover {
     background-color: #fff;
 }
-
-
 
 .testimonial {
     border : 1px solid #eceef0;
@@ -480,7 +449,6 @@ ol li i {
     display: flex;
     flex-direction: row;    
     padding: 28px 20px 28px 20px;
-    margin-right:30px;
     margin-bottom:30px;        
 }
 
@@ -504,7 +472,6 @@ ol li i {
 
 .testimonial:hover img {
     display:none;
-
 }
 .testimonial:hover .round {
     display:flex;
@@ -512,18 +479,9 @@ ol li i {
     justify-content: center;
     align-items: center;
 }
-.testimonial--info {
-    display:flex;
-    flex-direction: column;
-}
 .testimonial--info h3 {
     font-size: 18px;
 }
-
-.testimonial--info p {
-    padding: 10px 0px;
-}
-
 .testimonial img {
     border : 4px solid #fff;
     border-radius: 50%;
@@ -538,7 +496,6 @@ ol li i {
 
 .brands-section--border {
     border-top : 1px solid #e9e9e9;
-
 }
 .brands {
     padding:45px 0px;    
@@ -551,13 +508,11 @@ ol li i {
     filter : none;
 }
 
-
 /**-*/
 /*--- Maps -----------------------------*/
 
 #map {
     height : 500px;
-
 }
 .controls {
     margin-top: 10px;
@@ -593,7 +548,6 @@ ol li i {
 /*--------------------------------------*/
 /* - Seccion TheFox Design ------------**/
 
-
 #social li {
     padding : 10px;
     font-size:24px;
@@ -602,7 +556,6 @@ ol li i {
 #social li :hover {
     color:#1abc9c;
 }
-
 
 input[type="text"] {
     padding:20px;
@@ -623,6 +576,7 @@ input[type="submit"] {
     color:#fff;
     box-shadow: 1px 3px 0px 0px #81919b;
 }
+
 textarea {
     margin: 20px 0px;
     width:100%;
@@ -636,6 +590,7 @@ textarea {
     position:relative;    
 }
 .blog img {
+    width:100%;
     filter:contrast(50%);
 }
 .blog:hover img{
@@ -644,22 +599,21 @@ textarea {
 .blog:hover .blog--info {
     background-color: #252937;
     cursor:pointer;
-
 }
 
 .blog:hover h3 {
     color:#17e2ba;
 }
+
 .blog--info {
     position:absolute;
     top: 180px;
     z-index: 1;
-    text-align:center;
-    
+    text-align:center;    
     min-width : 384px;
     min-height:100px;
-
 }
+
 .blog--info h3{
     color:#fff;
     padding:30px 0px 10px 0px;
@@ -672,14 +626,9 @@ textarea {
     font-size: 14px;
 }
 
-
 /*------------------------------*/
 /* Call to Action ------------- */
 .cta {
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     color:#fff;
     background-image: url('../img/cta-bg.jpg');
     min-height:502px;
@@ -687,8 +636,7 @@ textarea {
 
 .cta h2 {
     color:#fff;
-    padding:20px;
-    
+    padding:20px;    
 }
 .cta p {
     padding:10px 0px 30px 0px;
@@ -701,7 +649,30 @@ button {
 /* Footer */
 
 footer {
-    background-color:    #1a1c27;
+    background-color: #1a1c27;
+}
+.footer--content {
+    display : grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 20px;
+    padding-top:100px;
+    height:480px;
+}
+.footer--logo{
+    grid-column: 1 / 2;
+}
+
+.footer--recent-posts { 
+    grid-column : 2 / 3 ;
+}
+
+.footer--recent-tweets {
+    grid-column: 3 / 4 
+}
+
+.footer--featured-works {
+    grid-column: 4 / 5;
 }
 footer h2 {
     font-size :18px;
@@ -717,7 +688,6 @@ footer .logo--footer {
     font-weight: 400;    
     border:none;
     margin-bottom:30px;
-
 }
 
 .info p {
@@ -729,8 +699,14 @@ footer .logo--footer span {
 }
 
 .post {
+    display:flex;
+    flex-direction: row;
+    justify-content:space-between;
     border-bottom:1px solid #262837;
     padding:18px 0px;
+}
+.post:last-of-type {
+    border : none;
 }
 .tweet i {
     padding:20px 20px 20px 0px;
@@ -742,6 +718,7 @@ footer .logo--footer span {
 .tweet--body {
     border-bottom:1px solid #262837;
 }
+
 .tweet--body a {
     color:#1abc9c;
 }
@@ -749,6 +726,10 @@ footer .logo--footer span {
     padding:10px;
     line-height:1.5;
 }
+.tweet:last-of-type .tweet--body {
+    border:none;
+}    
+
 .time {
     font-size: 12px;
 }
@@ -756,25 +737,28 @@ footer .logo--footer span {
 .featured-works h2 {
     margin-bottom:50px;
 }
-.featured-gallery--row{
-    display:flex;
-    flex-direction: row;
-}
-.featured-gallery--row img {
+.flex--row img {
     margin:8px;
 }
 
 .copyright {
     background-color: #222533;
+    height:69px;
 }
 
 .copyright--content {
-    display:flex;
-    flex-direction: row;
-    padding:20px;
-    justify-content: space-between;
+    display: grid ;
+    grid-template-columns: 3fr 1fr;
 }
+.copyright--content p {
+    grid-column: 1 / 1;
+    padding:27px 0;
+}
+.copyright--social {
+    grid-column: 2/3;
+    padding:20px 0px;;
 
+}
 .copyright--content p span {
     color:#1abc9c;
 }
@@ -785,16 +769,4 @@ footer .logo--footer span {
 
 .copyright--social i:hover {
     color:#fff;
-}
-
-
-
-/*---------AUXILIARES ---------------------*/ 
-/*TODO : BORRAR**/
-
-.secc {
-    min-height:  500px;
-    background-color: #fff;
-    border : 1px solid red;
-    
 }

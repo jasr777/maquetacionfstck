@@ -16,8 +16,8 @@
 <body>
     <header>
         <!-- Menu -->
-        <nav class="wrapper">
-            <ul>
+        <nav class="grid-wrapper">            
+            <ul class="wrapped-content">
                 <li>                   
                     <div class="logo">
                         <img src="/assets/img/logo.svg" alt="logo-thefox"></img>the<span>fox</span>
@@ -38,9 +38,9 @@
         </nav>
         <!-- Fin Menu -->
         <!-- Hero -->
-        <div class="hero">
-            <div class="wrapper">
-                <div class="content--column">
+        <div class="content--column content--column__justified hero">
+            <div class="grid-wrapper">
+                <div class="wrapped-content content--column">
                     <h1>WE ARE ALWAYS WORKING HARD TO<br><span> BUILD AWESOME WORK</span></h1>
                     <div class="line">
                         <div class="line--blue"></div>
@@ -61,9 +61,9 @@
     
     <main>
         <!-- Introduccion -->
-        <section class="wrapper">
-            <div class="content">
-                <div class="content--column content--column__padding-right content--column__justified-top">
+        <section class="grid-wrapper">
+            <div class="wrapped-content content">
+                <div class="content--column content--column__padding-right content--column__justified">
                     <h2>Hello!</h2>
                     <p>Welcome to ThemeForest! Read our Getting Started Guide, visit the Blog for recent news and make yourself at home! You can find information
                         about ThemeFores in our Knowledgebase.</p>
@@ -84,8 +84,7 @@
                     </div>
                     <div class="accordion">
                         <div class="accordion--header__left">
-                            <h3>Creative Service</h3>
-                            
+                            <h3>Creative Service</h3>                            
                         </div>
                         <div class="accordion--header__right"><i class="fas fa-angle-up"></i></div>
                         <div class="accordion--body">
@@ -98,7 +97,7 @@
                             <h3>SEO Solutions Service</h3>
                         </div>
                         <div class="accordion--header__right">
-                            <i class="fas fa-angle-up"></i>
+                            <i class="fas fa-angle-down"></i>
                         </div>
                         
                     </div>
@@ -115,258 +114,247 @@
         </section>
         <!-- Fin Introduccion -->
         <!-- Grid Amazing Works -->
-        <section class="bg">
-            <div class="wrapper">                
-                <h2 class="title-content--center title-content--center__padding-bot"> Amazing Works</h2>
-                <div class="grid">
-                    <div class="item1">
-                        <div class="grid--item">
-                            <h3>Awesome Work Title Here</h3>
-                            <div class="likes">
-                                <p>34</p><i class="far fa-heart"></i>
+        <section class="grid-wrapper bg">
+                <div class="wrapped-content">
+                    <h2 class="title-content--center"> Amazing Works</h2>
+                    <div class="grid">
+                        <div class="item1">
+                            <div class="grid--item">
+                                <h3>Awesome Work Title Here</h3>
+                                <div class="likes">
+                                    <p>34</p><i class="far fa-heart"></i>
+                                </div>
                             </div>
+                            <div class="box">+</div>
+                            <img src="assets/img/gridelement1.jpg" alt="">
                         </div>
-                        <div class="box">+</div>
-                        <img src="assets/img/gridelement1.jpg" alt="">
 
-                    </div>
-                    <div class="item2">
-                        <div class="grid--item">
-                            <h3>Awesome Work Title Here</h3>
-                            <div class="likes">
-                                <p>34</p>
-                                <i class="far fa-heart"></i>
+                        <div class="item2">
+                            <div class="grid--item">
+                                <h3>Awesome Work Title Here</h3>
+                                <div class="likes">
+                                    <p>34</p>
+                                    <i class="far fa-heart"></i>
+                                </div>
                             </div>
+                            <div class="box">+</div>
+                            <img src="assets/img/gridelement2.jpg" alt="">
                         </div>
-                        <div class="box">+</div>
-                        <img src="assets/img/gridelement2.jpg" alt="">
-                    </div>
-                    <div class="item3">
-                        <div class="grid--item">
-                            <h3>Awesome Work Title Here</h3>
-                            <div class="likes">
-                                <p>34</p>
-                                <i class="far fa-heart"></i>
-                            </div>
-                        </div>
-                        <div class="box">+</div>
-                        <img src="assets/img/gridelement3.jpg" alt="">
-                    </div>
-                    <div class="item4">
-                        <div class="grid--item">
-                            <h3>Awesome Work Title Here</h3>
-                            <div class="likes">
-                                <p>34</p>
-                                <i class="far fa-heart"></i>
-                            </div>
-                        </div>
-                        <div class="box">+</div>
-                        <img src="assets/img/gridelement4.jpg" alt="">
-                    </div>
-                    <div class="item5">
-                        <div class="grid--item">
-                            <h3>Awesome Work Title Here</h3>
-                            <div class="likes">
-                                <p>34</p>
-                                <i class="far fa-heart"></i>
-                            </div>
-                        </div>
-                        <div class="box">+</div>
-                        <img src="assets/img/gridelement3.jpg" alt="">
-                    </div>
-                    <div class="item6">
-                        <div class="grid--item">
-                            <h3>Awesome Work Title Here</h3>
-                            <div class="likes">
-                                <p>34</p>
-                                <i class="far fa-heart"></i>
-                            </div>
-                        </div>
-                        <div class="box">+</div>
-                        <img src="assets/img/gridelement6.jpg" alt="">
-                    </div>
-                    </div>
 
+                        <div class="item3">
+                            <div class="grid--item">
+                                <h3>Awesome Work Title Here</h3>
+                                <div class="likes">
+                                    <p>34</p>
+                                    <i class="far fa-heart"></i>
+                                </div>
+                            </div>
+                            <div class="box">+</div>
+                            <img src="assets/img/gridelement3.jpg" alt="">
+                        </div>
+
+                        <div class="item4">
+                            <div class="grid--item">
+                                <h3>Awesome Work Title Here</h3>
+                                <div class="likes">
+                                    <p>34</p>
+                                    <i class="far fa-heart"></i>
+                                </div>
+                            </div>
+                            <div class="box">+</div>
+                            <img src="assets/img/gridelement4.jpg" alt="">
+                        </div>
+
+                        <div class="item5">
+                            <div class="grid--item">
+                                <h3>Awesome Work Title Here</h3>
+                                <div class="likes">
+                                    <p>34</p>
+                                    <i class="far fa-heart"></i>
+                                </div>
+                            </div>
+                            <div class="box">+</div>
+                            <img src="assets/img/gridelement3.jpg" alt="">
+                        </div>
+
+                        <div class="item6">
+                            <div class="grid--item">
+                                <h3>Awesome Work Title Here</h3>
+                                <div class="likes">
+                                    <p>34</p>
+                                    <i class="far fa-heart"></i>
+                                </div>
+                            </div>
+                            <div class="box">+</div>
+                            <img src="assets/img/gridelement6.jpg" alt="">
+                        </div>
+                    </div> 
                 </div>
-
-            </div>
-        </section>
+    </section>
         <!-- Fin Grid Amazing Works -->
         <!-- Why Work with usbgc -->
 
-<!--    TODO : GRID             <section class="grid-wrapper">
+    <section class="grid-wrapper">
                     
-                    <div class="content wrapped-content">
-                        <div class="content--column">
-                            <h2> Why Work With Us</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa aliquid ad placeat dolore sunt qui, numquam eligendi
-                                natus sit id iure officiis praesentium nemo veniam nam maiores maxime tempora perferendis?</p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, recusandae. Deserunt ratione quam accusantium
-                                quaerat, necessitatibus vel soluta, laudantium placeat molestiae quasi laborum vero ab veritatis labore cumque
-                                repudiandae id?</p>
-                            <a>View Detail</a>
-                        </div>
-                        <div class="content--right">
-                            <img src="assets/img/ipad.png" alt="ipad">
-                        </div>
-                
-                    </div>
-                </section>
- -->
-        <section class="wrapper">
-            <div class="content">
-                <div class="content--column">
-                    <h2> Why Work With Us</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa aliquid ad placeat dolore sunt qui, numquam eligendi natus sit id iure officiis praesentium nemo veniam nam maiores maxime tempora perferendis?</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, recusandae. Deserunt ratione quam accusantium quaerat, necessitatibus vel soluta, laudantium placeat molestiae quasi laborum vero ab veritatis labore cumque repudiandae id?</p>
-                    <a class="btn btn--primary">VIEW DETAIL</a>
-                </div>
-                <div class="content--right">
-                    <img src="assets/img/ipad.png" alt="ipad">
-                </div>
-
+        <div class="content wrapped-content">
+            <div class="content--column">
+                <h2> Why Work With Us</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa aliquid ad placeat dolore sunt qui, numquam eligendi
+                natus sit id iure officiis praesentium nemo veniam nam maiores maxime tempora perferendis?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, recusandae. Deserunt ratione quam accusantium
+                quaerat, necessitatibus vel soluta, laudantium placeat molestiae quasi laborum vero ab veritatis labore cumque
+                repudiandae id?</p>
+                <a href="#" class="btn btn--primary">VIEW DETAIL</a>
             </div>
-        </section>
+            <div class="content--column">
+                <img src="assets/img/ipad.png" alt="ipad">
+            </div>
+                
+        </div>
+    </section> 
         <!-- Fin Why Work with us -->
         <!-- Estadisticas -->
-        <section class="content content--no-padding content--space-around">
-            <div class="block block--bgcolour__green">
+        <section class="content content--no-padding">
+            <div class="block content--column text--centered block--bgcolour__green">
                 <h2>28,3940</h2>
                 <h3>PURCHASES</h3>            
             </div>
-            <div class="block block--bgcolour__lightergreen">
+            <div class="block content--column text--centered block--bgcolour__lightergreen">
                 <h2>345,789</h2>
                 <h3>SUBSCRIBERS</h3>
             </div>
-            <div class="block block--bgcolour__green">
+            <div class="block content--column text--centered block--bgcolour__green">
                 <h2>694+</h2>
                 <h3>FEATURES ADDED</h3>
             </div>
-            <div class="block block--bgcolour__lightergreen">
+            <div class="block content--column text--centered block--bgcolour__lightergreen">
                 <h2>1,273,890</h2>
                 <h3>CUSTOMERS</h3>
             </div>
-            <div class="block block--bgcolour__green">
+            <div class="block content--column text--centered block--bgcolour__green">
                 <h2>3,637</h2>
                 <h3>COMMENTS</h3>
             </div>
         </section>
         <!-- fin Estadisticas-->
         <!-- Testimonios -->
-        <section class="wrapper">
-            
-            <div class="title-content--center">
-            <h2>What Other Say About TheFox</h2>
-            <div class="btngroup">
-                <a href="" class="btngroup--previous"><i class="fas fa-angle-left"></i>  Previous </a>
-                <a href="" class="btngroup--next">Next <i class="fas fa-angle-right"></i></a>
-            </div>
-            </div>
-            <div class="content content--no-padding">
-                <div class="content--column">
-                    <div class="testimonial">
-                        <div class="round">+</div>
-                        <img src="assets/img/test1.jpg" alt="">
-                        <div class="testimonial--info">
-                            <h3>Sam Isbiter</h3>
-                            <h4>Web Designer</h4>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum dignissimos perspiciatis unde dolorem cum adipisci, obcaecati iusto debitis modi odio error odit mollitia atque vero vitae repellendus incidunt non distinctio?</p>
-                        </div>
-                    </div>
-                    <div class="testimonial">
-                        <div class="round">+</div>
-                        <img src="assets/img/test2.jpg" alt="">
-                        <div class="testimonial--info">
-                            <h3>Sam Isbiter</h3>
-                            <h4>Web Designer</h4>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum dignissimos perspiciatis unde dolorem cum adipisci, obcaecati
-                                iusto debitis modi odio error odit mollitia atque vero vitae repellendus incidunt non distinctio?</p>
-                        </div>
+        <section class="grid-wrapper">
+            <div class="wrapped-content">                
+                <div class="title-content--center">
+                    <h2>What Other Say About TheFox</h2>
+                    <div class="btngroup">
+                        <a href="" class="btngroup--previous"><i class="fas fa-angle-left"></i>  Previous </a>
+                        <a href="" class="btngroup--next">Next <i class="fas fa-angle-right"></i></a>
                     </div>
                 </div>
-                <div class="content--column">
-                    <div class="testimonial">
-                        <div class="round">+</div>
-                        <img src="assets/img/test3.jpg" alt="">
-                        <div class="testimonial--info">
-                            <h3>Sam Isbiter</h3>
-                            <h4>Web Designer</h4>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum dignissimos perspiciatis unde dolorem cum adipisci, obcaecati
-                                iusto debitis modi odio error odit mollitia atque vero vitae repellendus incidunt non distinctio?</p>
+                <div class="grid-2">
+                    <div class="column1">
+                        <div class="testimonial">
+                            <div class="round">+</div>
+                            <img src="assets/img/test1.jpg" alt="">
+                            <div class="content--column">
+                                <h3>Sam Isbiter</h3>
+                                <h4>Web Designer</h4>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum dignissimos perspiciatis unde dolorem cum adipisci, obcaecati iusto debitis modi odio error odit mollitia atque vero vitae repellendus incidunt non distinctio?</p>
+                            </div>
+                        </div>
+                        <div class="testimonial">
+                            <div class="round">+</div>
+                            <img src="assets/img/test2.jpg" alt="">
+                            <div class="content--column">
+                                <h3>Sam Isbiter</h3>
+                                <h4>Web Designer</h4>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum dignissimos perspiciatis unde dolorem cum adipisci, obcaecati
+                                    iusto debitis modi odio error odit mollitia atque vero vitae repellendus incidunt non distinctio?</p>
+                            </div>
                         </div>
                     </div>
-                    
-                    <div class="testimonial">
-                        <div class="round">+</div>
-                        <img src="assets/img/test4.jpg" alt="">
-                        <div class="testimonial--info">
-                            <h3>Sam Isbiter</h3>
-                            <h4>Web Designer</h4>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum dignissimos perspiciatis unde dolorem cum adipisci, obcaecati
-                                iusto debitis modi odio error odit mollitia atque vero vitae repellendus incidunt non distinctio?</p>
+                    <div class="column2">
+                        <div class="testimonial">
+                            <div class="round">+</div>
+                            <img src="assets/img/test3.jpg" alt="">
+                            <div class="content--column">
+                                <h3>Sam Isbiter</h3>
+                                <h4>Web Designer</h4>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum dignissimos perspiciatis unde dolorem cum adipisci, obcaecati
+                                    iusto debitis modi odio error odit mollitia atque vero vitae repellendus incidunt non distinctio?</p>
+                            </div>
+                        </div>
+                        
+                        <div class="testimonial">
+                            <div class="round">+</div>
+                            <img src="assets/img/test4.jpg" alt="">
+                            <div class="content--column">
+                                <h3>Sam Isbiter</h3>
+                                <h4>Web Designer</h4>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum dignissimos perspiciatis unde dolorem cum adipisci, obcaecati
+                                    iusto debitis modi odio error odit mollitia atque vero vitae repellendus incidunt non distinctio?</p>
+                            </div>
                         </div>
                     </div>
-
                 </div>
             </div>
         </section>
+
         <!-- Fin testimonios-->
         <!-- Empresas que usan thefox -->
         <section class="brands-section--border">
-            <ul class="wrapper brands">
-                <li><img src="assets/img/telenor-logo.png" alt=""></li>
-                <li><img src="assets/img/nice-logo.png" alt=""></li>
-                <li><img src="assets/img/plate-logo.png" alt=""></li>
-                <li><img src="assets/img/brilliant-logo.png" alt=""></li>
-                <li><img src="assets/img/microsoft-logo.png" alt=""></li>
-                <li><img src="assets/img/colormedia-logo.png" alt=""></li>
-            </ul>
+            <div class="grid-wrapper">
+                <div class="wrapped-content">
+                    <ul class="brands">
+                        <li><img src="assets/img/telenor-logo.png" alt=""></li>
+                        <li><img src="assets/img/nice-logo.png" alt=""></li>
+                        <li><img src="assets/img/plate-logo.png" alt=""></li>
+                        <li><img src="assets/img/brilliant-logo.png" alt=""></li>
+                        <li><img src="assets/img/microsoft-logo.png" alt=""></li>
+                        <li><img src="assets/img/colormedia-logo.png" alt=""></li>
+                    </ul>
+                </div>
+            </div>
         </section>
         <!--Fin empresas que usan thefox-->
         <!-- Mapa google maps -->
         <section>
             <input id="pac-input" class="controls" type="text" placeholder="Search Box">
-            <div id="map">
-
-            </div>
-
+            <div id="map"></div>
         </section>
         <!-- Fin mapa google maps-->
-        <!-- Formulario de contacto -->
-        <section class="wrapper">
-            <div class="content">
-                <div class="content--column">
-                <h2>TheFox Design</h2>
-                <ul id="social">
-                    <li><i class="fab fa-facebook-f"></i></li>
-                    <li><i class="fab fa-twitter"></i></li>
-                    <li><i class="fas fa-rss"></i></li>
-                    <li><i class="fab fa-google-plus-g"></i></li>
-                    <li><i class="fab fa-flickr"></i></li>
-                    <li> <i class="fab fa-dribbble"></i></li>
-                    <li><i class="fab fa-linkedin-in"></i></li>
-                    <li><i class="fab fa-pinterest"></i></li>
-                    <li><i class="fab fa-skype"></i></li>
-                    <li><i class="fab fa-vimeo-v"></i></li>
-                    <li><i class="fab fa-tumblr"></i></li>
-                </ul>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At ex atque asperiores nihil accusantium harum nemo optio dolorum facere, veritatis sint in doloremque eaque accusamus delectus quas consequatur a odit.</p>
-                <p>267 Banbury Road, Summertown</p>
-                <p>Oxford, United Kingdom OX2 7HT</p>
-                <p>United Kingdom</p>
-                <p>Phone : 01865 339665</p>
-                <p>Fax : 01865 339301</p>
-                <p>Email : hello@thefoxdesign.com</p> 
-            </div>
-                <div class="content--column">
-                    <form>
-                        <input type="text" placeholder="Name*">
-                        <input type="text" placeholder="Email*">
-                        <input type="text" placeholder="Phone number">
-                        <textarea name="" id="" cols="30" rows="10"></textarea>
-                        <input type="submit" value="SUBMIT NOW"></button>
-                    </form>
-
+        <!-- Formulario de contacto -->        
+        <section class="grid-wrapper">
+            <div class="wrapped-content">
+                <div class="content">
+                    <div class="content--column">
+                    <h2>TheFox Design</h2>
+                    <ul id="social">
+                        <li><i class="fab fa-facebook-f"></i></li>
+                        <li><i class="fab fa-twitter"></i></li>
+                        <li><i class="fas fa-rss"></i></li>
+                        <li><i class="fab fa-google-plus-g"></i></li>
+                        <li><i class="fab fa-flickr"></i></li>
+                        <li> <i class="fab fa-dribbble"></i></li>
+                        <li><i class="fab fa-linkedin-in"></i></li>
+                        <li><i class="fab fa-pinterest"></i></li>
+                        <li><i class="fab fa-skype"></i></li>
+                        <li><i class="fab fa-vimeo-v"></i></li>
+                        <li><i class="fab fa-tumblr"></i></li>
+                    </ul>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At ex atque asperiores nihil accusantium harum nemo optio dolorum facere, veritatis sint in doloremque eaque accusamus delectus quas consequatur a odit.</p>
+                    <p>267 Banbury Road, Summertown</p>
+                    <p>Oxford, United Kingdom OX2 7HT</p>
+                    <p>United Kingdom</p>
+                    <p>Phone : 01865 339665</p>
+                    <p>Fax : 01865 339301</p>
+                    <p>Email : hello@thefoxdesign.com</p> 
+                </div>
+                    <div class="content--column">
+                        <form>
+                            <input type="text" placeholder="Name*">
+                            <input type="text" placeholder="Email*">
+                            <input type="text" placeholder="Phone number">
+                            <textarea name="" id="" cols="30" rows="10"></textarea>
+                            <input type="submit" value="SUBMIT NOW"></button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </section>
@@ -412,107 +400,112 @@
         </section>
         <!--Fin entradas blog-->
         <!-- Call to action -->
-        <section class="cta">
-
+        <section class="content--column text--centered cta">
             <h2> Get Stronger for your Work</h2>
             <p> TheFox is One Of The Top Themeforest's Selling PSD Theme of All Time</p>
             <a href="#"class="btn btn--primary__transparent"> PURCHASE NOW</a>
         </section>
         <!-- fin call to action-->
     </main>
-    
-    <footer>
-        <!-- Seccion recientes y trabajos -->
-        <div class="wrapper">
-        <section class="content">
-            <div class="content--column">
-                <h2 class="logo--footer">the<span>fox</span></h2>
-                <div class="info">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit facere, saepe aliquid repudiandae doloremque harum vitae voluptas iste laborum, hic aliquam delectus repellat deserunt dolorum numquam aspernatur quas. Architecto, est!</p>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos doloribus dolorum facere odio deleniti consectetur, esse mollitia? Placeat possimus laboriosam fugiat vitae fuga, quasi nulla ex in deleniti repellendus laudantium!</p>
-                </div>
-            </div>
-            <div class="content--column">
-                <h2>RECENT POSTS</h2>
-                <div class="content content--no-padding content--space-between post">
-                    <a href="">Blog Slideshow Post</a>
-                    <span>03 Jul</span>
-                </div>
-                <div class="content content--no-padding content--space-between post">
-                    <a href="#"> Standard Post</a>
-                    <span>27 May</span>
-                </div>
-                <div class="content content--no-padding content--space-between post">
-                    <a href="#">Video Post With Quote Post</a>
-                    <span>23 May</span>
-                </div>
-                <div class="content content--no-padding content--space-between post">
-                    <a href="#"> Text Post Only Type</a>
-                    <span>15 Apr</span>
-                </div>
-                <div class="content content--no-padding content--space-between">
-                    <a href="#">Awesome Post Title Here</a>
-                    <span>04 Mar</span>
-                </div>
-            </div>
-            <div class="content--column content--column__padding">
-                <h2>RECENT TWEETS</h2>
-                <div class="tweet">
-                    <i class="fab fa-twitter"></i>
-                    <div class="tweet--body">
-                        <p>Just updated my new site @samibister @wjndheo</p>
-                        <p class="time">35 minutes ago</p>
-                    </div>
-                </div>
+        <footer>
+            <div class="grid-wrapper">
+                <div class="wrapped-content">
+            <!-- Seccion recientes y trabajos -->
+                    <div class="footer--content">
+                            <div class="footer--logo">
+                                <h2 class="logo--footer">the
+                                    <span>fox</span>
+                                </h2>
+                                <div class="info">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit facere, saepe aliquid repudiandae doloremque
+                                        harum vitae voluptas iste laborum, hic aliquam delectus repellat deserunt dolorum numquam aspernatur
+                                        quas. Architecto, est!</p>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos doloribus dolorum facere odio deleniti
+                                        consectetur, esse mollitia? </p>
+                                </div>
+                            </div>
 
-                <div class="tweet">
-                    <i class="fab fa-twitter"></i>
-                    <div class="tweet--body">
-                    <p>Hey everybody! AfelfoxUpdate WP version. 356 Core Features Addes.
-                        Check it now! <a href="#">http://t.co/38t6sjx...</a> @samisbister @wjndheo
-                    </p>
+                            <div class="footer--recent-posts">
+                                <h2>RECENT POSTS</h2>
+                                <div class="post">
+                                    <a href="">Blog Slideshow Post</a>
+                                    <span>03 Jul</span>
+                                </div>
+                                <div class="post">
+                                    <a href="#"> Standard Post</a>
+                                    <span>27 May</span>
+                                </div>
+                                <div class="post">
+                                    <a href="#">Video Post With Quote Post</a>
+                                    <span>23 May</span>
+                                </div>
+                                <div class="post">
+                                    <a href="#"> Text Post Only Type</a>
+                                    <span>15 Apr</span>
+                                </div>
+                                <div class="post">
+                                    <a href="#">Awesome Post Title Here</a>
+                                    <span>04 Mar</span>
+                                </div>
+                            </div>
+                            <div class="footer--recent-tweets">
+                                <h2>RECENT TWEETS</h2>
+                                <div class="tweet">
+                                    <i class="fab fa-twitter"></i>
+                                    <div class="tweet--body">
+                                        <p>Just updated my new site @samibister @wjndheo</p>
+                                        <p class="time">35 minutes ago</p>
+                                    </div>
+                                </div>
                 
-                        <p class="time">35 minutes ago</p>
+                                <div class="tweet">
+                                    <i class="fab fa-twitter"></i>
+                                    <div class="tweet--body">
+                                        <p>Hey everybody! AfelfoxUpdate WP version. 356 Core Features Addes. Check it now!
+                                            <a href="#">http://t.co/38t6sjx...</a> @samisbister @wjndheo
+                                        </p>        
+                                        <p class="time">35 minutes ago</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="footer--featured-works">
+                                <h2>FEATURED WORKS</h2>
+                                <div class="flex--row">
+                                    <img src="assets/img/featured1.jpg" alt="">
+                                    <img src="assets/img/featured2.jpg" alt="">
+                                    <img src="assets/img/featured3.jpg" alt="">
+                                </div>
+                                <div class="flex--row">
+                                    <img src="assets/img/featured4.jpg" alt="">
+                                    <img src="assets/img/featured5.jpg" alt="">
+                                    <img src="assets/img/featured6.jpg" alt="">
+                                </div>
+                            </div>
                     </div>
-                </div>            
+                </div>
             </div>
-            <div class="featured-works">
-                <h2>FEATURED WORKS</h2>                
-                    <div class="featured-gallery--row">
-                        <img src="assets/img/featured1.jpg" alt="">
-                        <img src="assets/img/featured2.jpg" alt="">
-                        <img src="assets/img/featured3.jpg" alt="">
-                    </div>
-                    <div class="featured-gallery--row">
-                        <img src="assets/img/featured4.jpg" alt="">
-                        <img src="assets/img/featured5.jpg" alt="">
-                        <img src="assets/img/featured6.jpg" alt="">
-                    </div>
-                </div>                
-            </div>
-        </div>
-        </section>
         <!-- Fin seccion recientes y trabajos -->
         <!-- Copyright  yredes -->
         <section class="copyright">
-            <div class="wrapper">
-                <div class="copyright--content">
-                    <p>Copyright 2014 <span>TheFox Theme</span> by Tran Mau Tri Tram | All Rights Reserved | Powered by WordPress</p>
-                    <div class="copyright--social">                   
-                        <i class="fab fa-facebook-f"></i>                      
-                        <i class="fab fa-twitter"></i>
-                        <i class="fas fa-rss"></i>
-                        <i class="fab fa-google-plus-g"></i>
-                        <i class="fab fa-flickr"></i>
-                        <i class="fab fa-dribbble"></i>
-                        <i class="fab fa-linkedin-in"></i>
-                        <i class="fab fa-pinterest"></i>
-                        <i class="fab fa-skype"></i>
-                        <i class="fab fa-vimeo-v"></i>
-                        <i class="fab fa-tumblr"></i>
+            <div class="grid-wrapper">
+                <div class="wrapped-content">
+                    <div class="copyright--content">                
+                            <p>Copyright 2014 <span>TheFox Theme</span> by Tran Mau Tri Tram | All Rights Reserved | Powered by WordPress</p>
+                            <div class="copyright--social">                   
+                                <i class="fab fa-facebook-f"></i>                      
+                                <i class="fab fa-twitter"></i>
+                                <i class="fas fa-rss"></i>
+                                <i class="fab fa-google-plus-g"></i>
+                                <i class="fab fa-flickr"></i>
+                                <i class="fab fa-dribbble"></i>
+                                <i class="fab fa-linkedin-in"></i>
+                                <i class="fab fa-pinterest"></i>
+                                <i class="fab fa-skype"></i>
+                                <i class="fab fa-vimeo-v"></i>
+                                <i class="fab fa-tumblr"></i>
+                            </div>
                     </div>
-                </div>
- </div>
+                </div>    
         </section>
         <!-- fin copyright y redes -->
     </footer>
