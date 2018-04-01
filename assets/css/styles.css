@@ -13,6 +13,7 @@ body {
 
 a {
     text-decoration : none;
+    color:inherit;
 }
 h1 {
     font-size: 26px;
@@ -137,7 +138,25 @@ ul{
     
 }
  ul li {
-    flex-grow : 1;
+    flex-grow : 1;   
+}
+ul li a {
+    color:#2c3e50;
+}
+ul li a:hover {
+    color : #1abc9c;
+}
+
+.hover-line {
+    width: 41px;
+    height:5px;
+    background-color: #1abc9c;
+    display:none;
+    position:absolute;
+    top:0px;
+}
+ul li:hover .hover-line {
+    display:block;
 }
 
 .logo {
@@ -161,6 +180,9 @@ ul{
     line-height: 50px;
 
 }
+ol {
+    padding-top:10px;
+}
 
 ol li {
     font-size: 24px;
@@ -171,15 +193,25 @@ ol li {
     padding-bottom:20px;
 }
 ol li i {
-    font-size : 12px;
+    font-size : 16px;
     text-align : center; 
-    padding:15px;    
+    padding:8px;
+    background-color: #fff;   
+    border-radius :50%;
+    margin:auto;
+    display:inline;
+    border :1px solid #cacaca;
 }
 
-ol li a:active {
-    background-color: #000;
-
+ol li:hover i {
+    color :#21c2f8;
+    box-shadow: 0 0 0 5px #fff;
 }
+ol li  p {
+    display:inline;
+    padding-left:10px;
+}
+
 
 .line {
     width: 270px;
@@ -212,10 +244,9 @@ ol li a:active {
     width:390px;
     height:50px;
     background-color: #fff;
-    display:flex;
-    flex-direction: row;
+    border :1px solid #eceef0;
+   
     justify-content: space-between;
-    align-items: center;
 }
 .grid--item i {
     padding-right:10px;
@@ -223,8 +254,8 @@ ol li a:active {
 .grid--item h3 {
     padding:15px;
 }
+
 .likes p{
-    display:inline;
     padding:10px;
 }
 .box {
@@ -331,7 +362,9 @@ ol li a:active {
 .item6:hover .grid--item h3 {
     color:#fff;
 }
+
 /*-- Seccion Hello ! ---------------------------*/
+
 .accordion {
     padding-bottom:5px;
 }
@@ -341,15 +374,17 @@ ol li a:active {
     border-top : 1px solid #eceef0;
     border-left: 1px solid #eceef0;
     border-bottom:1px solid #eceef0;
-    border-radius: 3px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
     padding : 18px;
     width :533px;
 }
 
 .accordion--header__right {
     border : 1px solid #eceef0;
-    border-radius:3px;
-    padding : 18px;
+    border-top-right-radius:3px;
+    border-bottom-right-radius:3px;
+    padding : 19px;
     display:inline-block;
     width : 44px;
 }
@@ -359,7 +394,9 @@ ol li a:active {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    border : 1px solid #eceef0;
+    border-right : 1px solid #eceef0;
+    border-left: 1px solid #eceef0;
+    border-bottom: 1px solid #eceef0;    
     border-radius:0px 0px 3px 3px;
     padding :20px;
 }
@@ -422,7 +459,7 @@ ol li a:active {
     color:#2c3e50;
     font-weight: 700;
 }
-.btngroup .btngroup--previous {
+.btngroup--previous {
     padding: 15px 25px;
     border: 1px solid #d7dfe1;
     border-top-left-radius: 5px;
@@ -431,7 +468,7 @@ ol li a:active {
     background-color: #fbfafa;
 }
 
-.btngroup .btngroup--next {
+.btngroup--next {
     padding: 15px 30px;
     border: 1px solid #d7dfe1;
     border-top-right-radius: 5px;
@@ -590,8 +627,9 @@ textarea {
     position:relative;    
 }
 .blog img {
-    width:100%;
     filter:contrast(50%);
+    width : 100%;
+    height:100%;
 }
 .blog:hover img{
     filter : none;
@@ -607,16 +645,17 @@ textarea {
 
 .blog--info {
     position:absolute;
-    top: 180px;
+    top: 65%;
     z-index: 1;
     text-align:center;    
-    min-width : 384px;
-    min-height:100px;
+    width : 100%;
+    height:35%;
+
 }
 
 .blog--info h3{
     color:#fff;
-    padding:30px 0px 10px 0px;
+    padding:5%;
     font-weight: 700;;
 }
 
@@ -631,6 +670,7 @@ textarea {
 .cta {
     color:#fff;
     background-image: url('../img/cta-bg.jpg');
+    width:100%;
     min-height:502px;
 }
 
